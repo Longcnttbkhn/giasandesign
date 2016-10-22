@@ -1,0 +1,83 @@
+============
+chu thich  =			
+ip: input  =
+op: output =
+============		
+===============================================================
+Guest Case
+==============
+model: User
+
+===============================
+User Case
+==============
+search in map, list
+ip: map: tu khoa tim kiem/ list: dia chi, gia, id_bds
+op: tra ve ket qua tim kiem (tra ve toa do cho view, view hien thi ban do cho nguoi dung)
+==============
+view real estate in heatmap
+input: (de lam sau)
+==============
+contact to poster
+ip: nhap lieu vao cac o contact(ten, email, cau hoi cho poster)
+op: thanh cong hoac khong
+==============
+view detail bds
+ip: id_bds
+op: thong tin ve bds
+===
+model: batdongsan
+
+===============================
+Member Case
+===========
+logout
+ip: click logout -> gui function logout len system
+op: success or fail
+model: ko co, thuc hien tren controller
+===========
+write post
+ip: du lieu (nho chu thich ra ngoai)
+op: success or fail
+===========
+edit post
+ip: du lieu
+op: success or fail
+===
+model: batdongsan
+
+===============================
+Moerator Case
+===========
+verify post: co 3 trang thai: pendding, no approve, approved, 
+ip: trang thai da chon
+op: success or fail
+===========
+delete post 
+ip: click nut delete
+op: success or fail
+===
+model: RealEstate
+
+================================
+Admin Case
+===========
+add user
+ip: email, pass, username, role, trang thai active
+op: success or fail
+===========
+delete user
+ip: id
+op: success or fail
+===========
+edit user
+ip: pass, role, trang thai active
+op: success or fail
+===
+model: User
+
+====================================================================
+controller:
+Account: quan ly login, logout, register
+User: them sua xoa user
+RealEstateController: them sua xoa bds
